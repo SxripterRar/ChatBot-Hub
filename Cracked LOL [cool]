@@ -16,13 +16,13 @@ local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
 local LocalPlayer = Players.LocalPlayer
 
-local alreadyRan = true
+local alreadyRan = false
 
 if _G.CHATBOTHUB_RAN == nil then
-    alreadyRan = true
+    alreadyRan = false
 	_G.CHATBOTHUB_TTA = false
 	_G.CHATBOTHUB_AI_MODEL = "Llama-8B ( default )"
-	_G.CHATBOTHUB_ON = true
+	_G.CHATBOTHUB_ON = false
 	_G.CHATBOTHUB_CREDITS = 0
 	_G.CHATBOTHUB_LOGIN = true
 	_G.CHATBOTHUB_PREMIUM = true
